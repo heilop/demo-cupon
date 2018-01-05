@@ -21,9 +21,12 @@ class DefaultController extends Controller
   }
   
   /**
-   * @Route("/site/{pageName}")
+   * @Route(
+   *   "/site/{pageName}",
+   *   name = "page"
+   * )
    */
-  public function pageAction($pageName) 
+  public function pageAction($pageName = 'help') 
   {
     return $this->render("site/$pageName.html.twig");
   }
