@@ -23,7 +23,8 @@ class DefaultController extends Controller
   /**
    * @Route(
    *   "/site/{pageName}",
-   *   name = "page"
+   *   name = "page",
+   *   requirements={"pageName"="help|privacity|about-us"}
    * )
    */
   public function pageAction($pageName = 'help') 
