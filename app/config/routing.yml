@@ -3,7 +3,7 @@ app:
     type: annotation
 
 page:
-    path: /site/{pageName}
+    path: /site/{pageName}/
     defaults:
         _controller: 'AppBundle:Default:page'
     requirements:
